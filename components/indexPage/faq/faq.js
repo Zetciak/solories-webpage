@@ -121,46 +121,7 @@ function Faq() {
 						objectFit="contain"
 					/>
 				</div>
-				<div className={classes.accordionMargin}>
-					{data.map((accordion) => {
-						const { id, title, desc } = accordion;
-						return (
-							<StyledAccordion
-								expanded={expanded === id}
-								key={id}
-								onChange={handleChange(id)}
-								square
-							>
-								<AccordionSummary
-									className={classes.panelSummary}
-									expandIcon={
-										<div className={classes.expandArrow}>
-											<Image
-												src={arrow}
-												alt=""
-												width="100%"
-												height="100%"
-												layout="responsive"
-												objectFit="contain"
-											/>
-										</div>
-									}
-								>
-									<Typography className={classes.title}>
-										{title}
-									</Typography>
-								</AccordionSummary>
-								<AccordionDetails
-									className={classes.panelDetails}
-								>
-									<Typography className={classes.desc}>
-										{desc}
-									</Typography>
-								</AccordionDetails>
-							</StyledAccordion>
-						);
-					})}
-				</div>
+				<div className={classes.accordionMargin}></div>
 			</div>
 		</div>
 	);
