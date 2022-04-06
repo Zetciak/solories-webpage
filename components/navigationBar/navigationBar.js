@@ -69,11 +69,7 @@ function NavigationBar() {
 							</li>
 							<div className={classes.navStripe}></div>
 							<li>
-								<Link
-									to="blogScroll"
-									smooth={true}
-									disabled={true}
-								>
+								<Link smooth={true} disabled={true}>
 									<div className={classes.navDisabled}>
 										Blog
 									</div>

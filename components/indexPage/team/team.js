@@ -206,7 +206,7 @@ function Team() {
 	}, []);
 
 	return (
-		<div className={classes.mainDiv}>
+		<div className={classes.mainDiv} id="teamScroll">
 			<div className={classes.insideDivTitle}>
 				<div className={classes.titleDiv}>
 					<Image

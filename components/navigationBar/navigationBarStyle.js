@@ -113,6 +113,64 @@ const useStyles = makeStyles({
 			width: '86%',
 		},
 	},
+
+	//1300px
+	['@media (max-width: 1300px)']: {
+		centerElements: {
+			display: 'none',
+		},
+	},
+
+	//545px
+	['@media (max-width: 545px)']: {
+		rightElements: {
+			marginRight: '28px',
+			'& ul': {
+				'& li': {
+					display: 'inline-block',
+					paddingLeft: '15px',
+				},
+				'& li:nth-child(1)': {
+					paddingLeft: '0px',
+				},
+			},
+		},
+
+		logoDiv: {
+			marginLeft: '28px',
+		},
+	},
+
+	//551px
+	['@media (max-width: 551px)']: {
+		rightElements: {
+			marginRight: '10px',
+			'& ul': {
+				'& li': {
+					display: 'inline-block',
+					paddingLeft: '5px',
+				},
+				'& li:nth-child(1)': {
+					paddingLeft: '0px',
+				},
+			},
+		},
+
+		logoDiv: {
+			marginLeft: '10px',
+		},
+	},
+
+	//385px
+	['@media (max-width: 385px)']: {
+		rightElements: {
+			display: 'none',
+		},
+
+		logoDiv: {
+			margin: '0 auto',
+		},
+	},
 });
 
 export default useStyles;

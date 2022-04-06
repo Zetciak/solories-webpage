@@ -53,7 +53,7 @@ function FirstSection() {
 					</Button>
 					<Button
 						variant="contained"
-						className={`${classes.button} ${classes.rightButton}`}
+						className={`${classes.button2} ${classes.rightButton}`}
 						target="_blank"
 						endIcon={
 							<ArrowForwardRounded
@@ -106,13 +106,15 @@ function FirstSection() {
 					</div>
 				</div>
 			</div>
-			<div className={classes.rightSection}>
-				<Image
-					src={island}
-					alt=""
-					layout="responsive"
-					objectFit="contain"
-				/>
+			<div className={classes.outsideRightSection}>
+				<div className={classes.rightSection}>
+					<Image
+						src={island}
+						alt=""
+						layout="responsive"
+						objectFit="contain"
+					/>
+				</div>
 			</div>
 		</div>
 	);

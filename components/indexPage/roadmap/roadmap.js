@@ -226,7 +226,7 @@ function Roadmap() {
 	}
 
 	return (
-		<div className={classes.mainDiv}>
+		<div className={classes.mainDiv} id="roadmapScroll">
 			<div className={classes.insideDiv}>
 				<div className={classes.titleDiv}>
 					<Image

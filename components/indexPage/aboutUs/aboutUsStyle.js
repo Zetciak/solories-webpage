@@ -80,6 +80,81 @@ const useStyles = makeStyles({
 		marginLeft: '6px',
 		marginRight: '10px',
 	},
+
+	//<<<<<<<<<<<<<<<<<<<< Responsive scale
+	//1439px
+	['@media (max-width: 1439px)']: {
+		mainDiv: {
+			width: '90%',
+		},
+	},
+
+	//1230px
+	['@media (max-width: 1230px)']: {
+		leftSection: {
+			display: 'none',
+		},
+
+		rightSection: {
+			width: '100%',
+			clear: 'both',
+		},
+
+		titleDiv: {
+			width: '549px',
+			height: '57px',
+			margin: '0 auto',
+			marginTop: '70px',
+		},
+
+		rightSectionDesc: {
+			width: '100%',
+			textAlign: 'center',
+		},
+
+		button: {
+			width: '100%',
+		},
+
+		outSideButton: {
+			width: '200px',
+			margin: '0 auto',
+			marginTop: '2px',
+		},
+	},
+
+	//913px
+	['@media (max-width: 913px)']: {
+		rightSectionDesc: {
+			fontSize: '12px',
+			lineHeight: '200%',
+		},
+	},
+
+	//610px
+	['@media (max-width: 610px)']: {
+		titleDiv: {
+			marginTop: '70px',
+			width: '100%',
+			height: 'auto',
+		},
+	},
+
+	//580px
+	['@media (max-width: 580px)']: {
+		rightSectionDesc: {
+			fontSize: '10px',
+			lineHeight: '200%',
+		},
+	},
+
+	//350px
+	['@media (max-width: 350px)']: {
+		rightSectionDesc: {
+			fontSize: '9.5px',
+			lineHeight: '200%',
+		},
+	},
 });
 
 export default useStyles;

@@ -85,6 +85,30 @@ const useStyles = makeStyles({
 		position: 'absolute',
 		marginTop: '257px',
 	},
+
+	//<<<<<<<<<<<<<<<<<<<< Responsive scale
+	//1439px
+	['@media (max-width: 1439px)']: {
+		insideDiv: {
+			width: '90%',
+			margin: '0 auto',
+		},
+	},
+
+	//1020px
+	['@media (max-width: 1020px)']: {
+		titleDiv: {
+			width: '90%',
+			height: 'auto',
+			margin: '0 auto',
+		},
+
+		mainDesc: {
+			marginTop: '21px',
+			width: '100%',
+			textAlign: 'center',
+		},
+	},
 });
 
 export default useStyles;

@@ -62,17 +62,21 @@ function AboutUs() {
 					plenty of places to rest – the Lorries&apos; new home was
 					truly ideal!
 				</Typography>
-				<Button
-					variant="contained"
-					className={classes.button}
-					href="https://discord.gg/JdxwwZfpXh"
-					target="_blank"
-					endIcon={
-						<ArrowForwardRounded className={classes.arrowIcon} />
-					}
-				>
-					<Typography>Join Discord</Typography>
-				</Button>
+				<div className={classes.outSideButton}>
+					<Button
+						variant="contained"
+						className={classes.button}
+						href="https://discord.gg/JdxwwZfpXh"
+						target="_blank"
+						endIcon={
+							<ArrowForwardRounded
+								className={classes.arrowIcon}
+							/>
+						}
+					>
+						<Typography>Join Discord</Typography>
+					</Button>
+				</div>
 			</div>
 		</div>
 	);

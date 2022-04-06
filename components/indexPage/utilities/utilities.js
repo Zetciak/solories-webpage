@@ -20,7 +20,7 @@ function Utilities() {
 	//Style
 	const classes = useStyles();
 	return (
-		<div className={classes.mainDiv}>
+		<div className={classes.mainDiv} id="utilitiesScroll">
 			<div className={classes.insideDiv}>
 				<div className={classes.titleDiv}>
 					<Image
