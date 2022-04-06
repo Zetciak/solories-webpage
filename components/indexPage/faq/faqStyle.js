@@ -35,6 +35,32 @@ const useStyles = makeStyles({
 		border: '5px solid #FFFFFF55',
 		borderRadius: '0px 0px 11.3918px 11.3918px',
 	},
+
+	title: {
+		fontFamily: 'Orbitron',
+		fontStyle: 'normal',
+		fontWeight: '600',
+		fontSize: '25px',
+		lineHeight: '150%',
+		marginLeft: '10px',
+		color: '#636363',
+		marginTop: '5px',
+	},
+
+	desc: {
+		fontFamily: 'Alef',
+		fontStyle: 'normal',
+		fontWeight: '400',
+		fontSize: '16px',
+		lineHeight: '200%',
+		marginLeft: '10px',
+		color: '#010101',
+		marginTop: '5px',
+	},
+
+	accordionMargin: {
+		marginTop: '71px',
+	},
 });
 
 export default useStyles;
