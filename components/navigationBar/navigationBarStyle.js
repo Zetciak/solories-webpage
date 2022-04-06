@@ -27,7 +27,7 @@ const useStyles = makeStyles({
 	},
 
 	logoDiv: {
-		marginTop: '3px',
+		marginTop: '1px',
 		marginLeft: '51px',
 		minWidth: '132px',
 		minHeight: '67px',

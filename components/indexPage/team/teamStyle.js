@@ -46,6 +46,13 @@ const useStyles = makeStyles({
 		},
 	},
 
+	arrowLeftIcon: {
+		transform: 'rotate(180deg)',
+		color: 'white',
+		width: '22px',
+		height: 'auto',
+	},
+
 	arrowRight: {
 		width: '40px',
 		height: '40px',
@@ -65,6 +72,13 @@ const useStyles = makeStyles({
 			opacity: '1',
 			cursor: 'pointer',
 		},
+	},
+
+	arrowRightIcon: {
+		transform: 'rotate(-180deg)',
+		color: 'white',
+		width: '22px',
+		height: 'auto',
 	},
 
 	sliderDiv: {

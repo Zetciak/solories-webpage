@@ -14,6 +14,7 @@ import Utilities from '../components/indexPage/utilities/utilities';
 import Roadmap from '../components/indexPage/roadmap/roadmap';
 import Team from '../components/indexPage/team/team';
 import Faq from '../components/indexPage/faq/faq';
+import Footer from '../components/footer/footer';
 
 //CSS
 import useStyles from '../components/indexPage/indexStyle';
@@ -36,6 +37,7 @@ function HomePage() {
 			<Roadmap />
 			<Team />
 			<Faq />
+			<Footer />
 		</div>
 	);
 }

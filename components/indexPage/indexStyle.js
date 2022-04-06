@@ -14,9 +14,9 @@ const useStyles = makeStyles({
 
 	indexStripes: {
 		width: '1440px',
-		height: '5788px',
-		backgroundImage: "url('https://i.imgur.com/G5IkV7R.png')",
-		position: 'absolute',
+		height: '100%',
+		backgroundImage: "url('https://i.imgur.com/twxs4sl.png')",
+		position: 'fixed',
 		'z-index': '-1',
 		top: '0',
 		left: '0',
@@ -30,7 +30,6 @@ const useStyles = makeStyles({
 	['@media (max-width: 1439px)']: {
 		indexStripes: {
 			width: '100%',
-			height: '300%',
 			backgroundRepeat: 'no-repeat',
 			backgroundSize: 'cover',
 		},

@@ -79,7 +79,8 @@ const useStyles = makeStyles({
 	lineDiv: {
 		background: '#A1EEF7',
 		opacity: '0.7',
-		width: '100%',
+		width: '200%',
+		left: '-100%',
 		height: '4px',
 		position: 'absolute',
 		marginTop: '257px',

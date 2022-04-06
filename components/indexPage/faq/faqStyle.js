@@ -32,7 +32,7 @@ const useStyles = makeStyles({
 	panelDetails: {
 		background:
 			'radial-gradient(59.18% 59.18% at 50.73% 100.25%, rgba(222, 190, 205, 0.2) 0%, rgba(241, 226, 220, 0.2) 100%), linear-gradient(156.26deg, rgba(255, 255, 255, 0.2) -4.88%, rgba(255, 255, 255, 0) 147.21%)',
-		border: '5px solid #FFFFFF55',
+		border: '4px solid #FFFFFF55',
 		borderRadius: '0px 0px 11.3918px 11.3918px',
 	},
 

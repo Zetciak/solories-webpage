@@ -1,9 +1,10 @@
 //Imports
-import { Typography } from '@material-ui/core';
+import { Typography, IconButton } from '@material-ui/core';
 import Image from 'next/image';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { useCallback, useRef } from 'react';
 import 'swiper/css';
+import ArrowForwardRounded from '@material-ui/icons/ArrowForwardRounded';
 
 //Images
 import arrow from '../../../public/images/indexPage/team/arrow.svg';
@@ -218,16 +219,14 @@ function Team() {
 			</div>
 			<div className={classes.insideDiv}>
 				<div className={classes.allSlides}>
-					<div className={classes.arrowLeft} onClick={handlePrev}>
-						<Image
-							src={arrow}
-							alt=""
-							width="100%"
-							height="100%"
-							layout="responsive"
-							objectFit="contain"
+					<IconButton
+						className={classes.arrowLeft}
+						onClick={handlePrev}
+					>
+						<ArrowForwardRounded
+							className={classes.arrowLeftIcon}
 						/>
-					</div>
+					</IconButton>
 					<Swiper
 						slidesPerView={3}
 						spaceBetween={0}
@@ -237,16 +236,14 @@ function Team() {
 					>
 						{teamMembers}
 					</Swiper>
-					<div className={classes.arrowRight} onClick={handleNext}>
-						<Image
-							src={arrow}
-							alt=""
-							width="100%"
-							height="100%"
-							layout="responsive"
-							objectFit="contain"
+					<IconButton
+						className={classes.arrowRight}
+						onClick={handleNext}
+					>
+						<ArrowForwardRounded
+							className={classes.arrowRightIcon}
 						/>
-					</div>
+					</IconButton>
 				</div>
 			</div>
 		</div>
