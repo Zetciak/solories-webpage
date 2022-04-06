@@ -1,1 +1,8 @@
-{}
+{
+  "index.js -> ../components/navigationBar/navigationBar": {
+    "id": "index.js -> ../components/navigationBar/navigationBar",
+    "files": [
+      "static/chunks/components_navigationBar_navigationBar_js.js"
+    ]
+  }
+}

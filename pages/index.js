@@ -33,7 +33,7 @@ function HomePage() {
 			<AboutUs />
 			<NftArts />
 			<Utilities />
-
+			<Roadmap />
 			<Team />
 			<Faq />
 		</div>
