@@ -6,6 +6,7 @@ import Image from 'next/image';
 import discordLogo from '../../public/images/navigation/discord.svg';
 import twitterLogo from '../../public/images/navigation/twitter.svg';
 import mailLogo from '../../public/images/navigation/mail.svg';
+import mediumLogo from '../../public/images/navigation/medium.svg';
 
 //CSS
 import useStyles from './footerStyle';
@@ -20,7 +21,7 @@ function Footer() {
 				<div className={classes.insideDiv}>
 					<div className={classes.stripeDiv}></div>
 					<Typography className={classes.leftTitle}>
-						@SOLORIES2022, ALL RIGHTS RESERVED.
+						@LoopyLorisTribe, ALL RIGHTS RESERVED.
 					</Typography>
 					<div className={classes.rightElements}>
 						<ul>
@@ -66,7 +67,7 @@ function Footer() {
 							</li>
 							<li>
 								<a
-									href="mailto:hello@loopyloristribe.com"
+									href="https://medium.com/@LoopyLorisTribe"
 									target="_blank"
 									rel="noreferrer"
 								>
@@ -74,7 +75,7 @@ function Footer() {
 										className={classes.rightElementsElement}
 									>
 										<Image
-											src={mailLogo}
+											src={mediumLogo}
 											alt=""
 											width="100%"
 											height="100%"

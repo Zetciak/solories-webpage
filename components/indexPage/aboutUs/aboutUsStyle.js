@@ -8,14 +8,28 @@ const useStyles = makeStyles({
 
 	leftSection: {
 		width: '500px',
-		height: '729px',
+
 		marginTop: '120px',
 		float: 'left',
 	},
 
+	frameImage: {
+		width: '544px',
+		height: '544px',
+		margin: '0 auto',
+		marginTop: '-450px',
+	},
+
+	nftImage: {
+		width: '382px',
+		height: '382px',
+		marginTop: '101px',
+		marginLeft: '78px',
+	},
+
 	rightSection: {
 		width: '549px',
-		height: '568px',
+
 		float: 'right',
 	},
 

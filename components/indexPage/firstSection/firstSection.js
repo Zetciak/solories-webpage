@@ -24,6 +24,7 @@ function FirstSection() {
 						alt=""
 						layout="responsive"
 						objectFit="contain"
+						priority={true}
 					/>
 				</div>
 				<Typography className={classes.leftSectionDesc}>

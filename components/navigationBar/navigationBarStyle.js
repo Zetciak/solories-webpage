@@ -33,6 +33,42 @@ const useStyles = makeStyles({
 		minHeight: '67px',
 	},
 
+	audioDiv: {
+		width: '1280px',
+		height: '49px',
+		position: 'fixed',
+		left: '50%',
+		transform: 'translate(-50%, 0)',
+		'z-index': '100',
+		bottom: '10%',
+	},
+
+	audioButton: {
+		width: '49px',
+		height: '49px',
+		background:
+			'linear-gradient(223.33deg, #A1EEF7 -10.05%, #FEE396 95.51%)',
+		border: '2px solid rgba(255, 255, 255, 0.5)',
+		boxShadow: '0px 4px 4px rgba(0, 0, 0, 0.05)',
+		borderRadius: '10000px',
+		opacity: '1.0',
+
+		transition: 'border .5s',
+		'&:hover': {
+			border: '2px solid #FFFFFF',
+			cursor: 'pointer',
+		},
+		position: 'fixed',
+		right: '0',
+		bottom: '10%',
+	},
+
+	audioIcon: {
+		color: 'white',
+		width: '26px',
+		height: 'auto',
+	},
+
 	centerElements: {
 		marginLeft: 'auto',
 		marginTop: '-13px',

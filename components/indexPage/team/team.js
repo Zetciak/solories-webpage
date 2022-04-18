@@ -87,7 +87,6 @@ function Team() {
 	//Team members
 	if (drawed === false) {
 		drawed = true;
-		console.log('drawing');
 		for (let i = 1; i < teamMembersList.length; i++) {
 			teamMembers.push(
 				<SwiperSlide className={classes.oneSlide} key={i}>
@@ -100,6 +99,7 @@ function Team() {
 									width="252px"
 									height="252px"
 									className={classes.bigImage}
+									priority={true}
 								/>
 							</div>
 							<div className={classes.smallImage}>
@@ -109,6 +109,7 @@ function Team() {
 									width="72px"
 									height="72px"
 									className={classes.smallImage}
+									priority={true}
 								/>
 							</div>
 							<div className={classes.firstLine}>

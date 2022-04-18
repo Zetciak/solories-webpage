@@ -3,9 +3,9 @@ import { makeStyles } from '@material-ui/core/styles';
 const useStyles = makeStyles({
 	mainDiv: {
 		width: '100%',
-		height: '360px',
+		height: '383px',
 		marginTop: '171px',
-		background: 'white',
+		//	background: 'white',
 		float: 'left',
 	},
 
@@ -16,18 +16,26 @@ const useStyles = makeStyles({
 
 	nftShow: {
 		marginTop: '24px',
-		overflow: 'hidden',
+	},
+
+	frameImage: {
+		width: '363px',
+		height: '363px',
+		position: 'absolute',
+		marginTop: '-290px',
+	},
+
+	nftImage: {
+		width: '280px',
+		height: '280px',
+		paddingTop: '30px',
+		marginLeft: '30px',
 	},
 
 	oneNftDiv: {
-		width: '254px',
-		height: '311px',
-		marginRight: '39px',
-		marginTop: 'auto',
-	},
-
-	oneNftDiva: {
-		borderRadius: '10px',
+		width: '383px',
+		height: '383px',
+		marginLeft: '-100px',
 	},
 
 	//<<<<<<<<<<<<<<<<<<<< Responsive scale

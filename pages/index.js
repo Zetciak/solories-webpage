@@ -35,7 +35,6 @@ function HomePage() {
 			<NftArts />
 			<Utilities />
 			<Roadmap />
-
 			<Team />
 			<Faq />
 			<Footer />

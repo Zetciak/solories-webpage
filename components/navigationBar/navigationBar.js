@@ -1,13 +1,19 @@
 //Imports
-import { AppBar, Toolbar } from '@material-ui/core';
+import { AppBar, Toolbar, IconButton } from '@material-ui/core';
 import Image from 'next/image';
 import { Link } from 'react-scroll';
+import { useState } from 'react';
 
 //Images
 import logo from '../../public/images/navigation/logo.png';
 import discordLogo from '../../public/images/navigation/discord.svg';
 import twitterLogo from '../../public/images/navigation/twitter.svg';
 import mailLogo from '../../public/images/navigation/mail.svg';
+import mediumLogo from '../../public/images/navigation/medium.svg';
+
+import VolumeUpRounded from '@material-ui/icons/VolumeUpRounded';
+import VolumeDownRounded from '@material-ui/icons/VolumeDownRounded';
+import VolumeOffRounded from '@material-ui/icons/VolumeOffRounded';
 
 //CSS
 import useStyles from './navigationBarStyle';
@@ -16,8 +22,51 @@ import useStyles from './navigationBarStyle';
 function NavigationBar() {
 	//Style
 	const classes = useStyles();
+	const [played, setPlayed] = useState(false);
+	const [playing, setPlaying] = useState(0);
+
+	function changePlay() {
+		if (playing === 0) {
+			document.getElementById('mySound').play();
+			document.getElementById('mySound').volume = 0.5;
+			setPlaying(1);
+		} else if (playing === 1) {
+			document.getElementById('mySound').volume = 1;
+			setPlaying(2);
+		} else if (playing === 2) {
+			document.getElementById('mySound').volume = 0.5;
+			document.getElementById('mySound').pause();
+			setPlaying(0);
+		}
+	}
+
+	if (played === false) {
+		if (document.getElementById('mySound')) {
+			setPlayed(true);
+			document.getElementById('mySound').play();
+			document.getElementById('mySound').volume = 0.5;
+			setPlaying(1);
+		}
+	}
+
 	return (
 		<>
+			<div className={classes.audioDiv}>
+				<audio id="mySound" src="./music.mp3" loop></audio>
+				<IconButton
+					className={classes.audioButton}
+					onClick={() => changePlay()}
+				>
+					{playing === 0 ? (
+						<VolumeOffRounded className={classes.audioIcon} />
+					) : playing === 1 ? (
+						<VolumeDownRounded className={classes.audioIcon} />
+					) : (
+						<VolumeUpRounded className={classes.audioIcon} />
+					)}
+				</IconButton>
+			</div>
+
 			<AppBar className={classes.appBar} elevation={0}>
 				<Toolbar className={classes.toolBar}>
 					<div className={classes.appBarBg}></div>
@@ -33,7 +82,11 @@ function NavigationBar() {
 					<div className={classes.centerElements}>
 						<ul>
 							<li>
-								<Link to="overviewScroll" smooth={true}>
+								<Link
+									to="overviewScroll"
+									smooth={true}
+									onClick={() => play()}
+								>
 									Overview
 								</Link>
 							</li>
@@ -69,11 +122,11 @@ function NavigationBar() {
 							</li>
 							<div className={classes.navStripe}></div>
 							<li>
-								<Link smooth={true} disabled={true}>
+								<a disabled={true}>
 									<div className={classes.navDisabled}>
 										Blog
 									</div>
-								</Link>
+								</a>
 							</li>
 						</ul>
 					</div>
@@ -121,7 +174,7 @@ function NavigationBar() {
 							</li>
 							<li>
 								<a
-									href="mailto:hello@loopyloristribe.com"
+									href="https://medium.com/@LoopyLorisTribe"
 									target="_blank"
 									rel="noreferrer"
 								>
@@ -129,7 +182,7 @@ function NavigationBar() {
 										className={classes.rightElementsElement}
 									>
 										<Image
-											src={mailLogo}
+											src={mediumLogo}
 											alt=""
 											width="100%"
 											height="100%"

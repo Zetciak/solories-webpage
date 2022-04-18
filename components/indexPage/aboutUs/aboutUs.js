@@ -4,8 +4,9 @@ import Image from 'next/image';
 import ArrowForwardRounded from '@material-ui/icons/ArrowForwardRounded';
 
 //Images
-import nftImage from '../../../public/images/indexPage/aboutUs/nftImage.png';
 import title from '../../../public/images/indexPage/aboutUs/title.png';
+import frame from '../../../public/images/indexPage/aboutUs/frame.png';
+import nftgif from '../../../public/images/indexPage/aboutUs/nftgif.gif';
 
 //CSS
 import useStyles from './aboutUsStyle';
@@ -17,12 +18,26 @@ function AboutUs() {
 	return (
 		<div className={classes.mainDiv}>
 			<div className={classes.leftSection} id="aboutUsScroll">
-				<Image
-					src={nftImage}
-					alt=""
-					layout="responsive"
-					objectFit="contain"
-				/>
+				<div className={classes.nftImage}>
+					<Image
+						src={nftgif}
+						alt=""
+						layout="responsive"
+						objectFit="contain"
+						quality="100"
+						priority={true}
+					/>
+				</div>
+				<div className={classes.frameImage}>
+					<Image
+						src={frame}
+						alt=""
+						layout="responsive"
+						objectFit="contain"
+						quality="100"
+						priority={true}
+					/>
+				</div>
 			</div>
 			<div className={classes.rightSection}>
 				<div className={classes.titleDiv}>
@@ -55,12 +70,6 @@ function AboutUs() {
 					weapons! The Lorries had climbed out of the crack in the
 					world to find their land completely Barron. Then they see in
 					the distance a Lemur sunbathing with flowers on his head!
-					They approached this King Lemur to find a beach lined with
-					Coconuts, lush vegetation, white sandy beaches against their
-					fur, and the cleanest ocean they&apos;d ever seen! So far
-					away from pesky predators, but with plenty of food – and
-					plenty of places to rest – the Lorries&apos; new home was
-					truly ideal!
 				</Typography>
 				<div className={classes.outSideButton}>
 					<Button
