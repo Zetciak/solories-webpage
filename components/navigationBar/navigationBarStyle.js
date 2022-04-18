@@ -61,7 +61,7 @@ const useStyles = makeStyles({
 		position: 'fixed',
 		right: '0',
 		bottom: '10%',
-	},
+	},s
 
 	audioIcon: {
 		color: 'white',
