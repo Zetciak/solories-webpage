@@ -325,6 +325,14 @@ function Roadmap() {
 									objectFit="contain"
 								/>
 							</div>
+							<div className={classes.lineDiv}>
+								<Image
+									src={unfilledLine}
+									alt=""
+									layout="responsive"
+									objectFit="contain"
+								/>
+							</div>
 						</div>
 						<div className={classes.roadmapElements}>
 							{roadmapPhase3}

@@ -47,7 +47,9 @@ const useStyles = makeStyles({
 		fontSize: '14px',
 		lineHeight: '200%',
 		color: 'rgba(99, 99, 99, 0.75)',
-		width: '551px',
+		overflow: 'hidden',
+		transition: 'height 0.5s',
+		//width: '551px',
 	},
 
 	button: {
@@ -93,6 +95,32 @@ const useStyles = makeStyles({
 		height: 'auto',
 		marginLeft: '6px',
 		marginRight: '10px',
+	},
+
+	moreButton: {
+		marginTop: '32px',
+		width: '39px',
+		height: '39px',
+		background:
+			'linear-gradient(223.33deg, #A1EEF7 -10.05%, #FEE396 95.51%)',
+		border: '2px solid rgba(255, 255, 255, 0.5)',
+		boxShadow: '0px 4px 4px rgba(0, 0, 0, 0.05)',
+		borderRadius: '10000px',
+		opacity: '1.0',
+
+		transition: 'border .5s',
+		float: 'right',
+		'&:hover': {
+			border: '2px solid #FFFFFF',
+			cursor: 'pointer',
+		},
+	},
+
+	moreIcon: {
+		color: 'white',
+		width: '16px',
+		height: 'auto',
+		transition: 'transform 0.5s',
 	},
 
 	//<<<<<<<<<<<<<<<<<<<< Responsive scale

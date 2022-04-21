@@ -1,7 +1,8 @@
 //Imports
-import { Typography, Button } from '@material-ui/core';
+import { Typography, Button, IconButton } from '@material-ui/core';
 import Image from 'next/image';
 import ArrowForwardRounded from '@material-ui/icons/ArrowForwardRounded';
+import { useState } from 'react';
 
 //Images
 import title from '../../../public/images/indexPage/aboutUs/title.png';
@@ -13,6 +14,8 @@ import useStyles from './aboutUsStyle';
 
 //Script
 function AboutUs() {
+	const [bigger, setBigger] = useState(false);
+
 	//Style
 	const classes = useStyles();
 	return (
@@ -48,7 +51,14 @@ function AboutUs() {
 						objectFit="contain"
 					/>
 				</div>
-				<Typography className={classes.rightSectionDesc}>
+				<Typography
+					className={classes.rightSectionDesc}
+					style={
+						bigger === true
+							? { height: '530px' }
+							: { height: '385px' }
+					}
+				>
 					Never take a wild animal out of its habitat. One gloomy
 					night hunters raided the forest, carrying torches and large
 					nets to catch as much of the wildlife as they could. Their
@@ -70,6 +80,12 @@ function AboutUs() {
 					weapons! The Lorries had climbed out of the crack in the
 					world to find their land completely Barron. Then they see in
 					the distance a Lemur sunbathing with flowers on his head!
+					They approached this King Lemur to find a beach lined with
+					Coconuts, lush vegetation, white sandy beaches against their
+					fur, and the cleanest ocean they&apos;d ever seen! So far
+					away from pesky predators, but with plenty of food – and
+					plenty of places to rest – the Lorries&apos; new home was
+					truly ideal!
 				</Typography>
 				<div className={classes.outSideButton}>
 					<Button
@@ -85,6 +101,19 @@ function AboutUs() {
 					>
 						<Typography>Join Discord</Typography>
 					</Button>
+					<IconButton
+						className={classes.moreButton}
+						onClick={() => setBigger(!bigger)}
+					>
+						<ArrowForwardRounded
+							className={classes.moreIcon}
+							style={
+								bigger === true
+									? { transform: 'rotate(-90deg)' }
+									: { transform: 'rotate(90deg)' }
+							}
+						/>
+					</IconButton>
 				</div>
 			</div>
 		</div>

@@ -117,7 +117,7 @@ const useStyles = makeStyles({
 		'& ul': {
 			'& li': {
 				display: 'inline-block',
-				paddingLeft: '30px',
+				paddingLeft: '22px',
 			},
 			'& li:nth-child(1)': {
 				paddingLeft: '0px',

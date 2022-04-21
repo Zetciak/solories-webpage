@@ -25,6 +25,17 @@ const useStyles = makeStyles({
 		marginRight: 'auto',
 	},
 
+	indexNoise: {
+		width: '100%',
+		height: '100%',
+		backgroundImage: "url('https://i.imgur.com/5vBRV5o.png')",
+		position: 'fixed',
+		'z-index': '-1',
+		top: '0',
+		opacity: '0.6',
+		'mix-blend-mode': 'luminosity',
+	},
+
 	//<<<<<<<<<<<<<<<<<<<< Responsive scale
 	//1439px
 	['@media (max-width: 1439px)']: {

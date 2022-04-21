@@ -29,6 +29,7 @@ function HomePage() {
 			</Head>
 			<div className={classes.background}></div>
 			<div className={classes.indexStripes}></div>
+			<div className={classes.indexNoise}></div>
 			<NavigationBar />
 			<FirstSection />
 			<AboutUs />
