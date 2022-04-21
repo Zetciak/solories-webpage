@@ -241,7 +241,15 @@ function Roadmap() {
 					of the most joyful Blue-Chip Luna NFT projects.
 				</Typography>
 				<Swiper
-					slidesPerView={3}
+					breakpoints={{
+						1000: {
+							slidesPerView: 2,
+						},
+
+						1439: {
+							slidesPerView: 3,
+						},
+					}}
 					spaceBetween={0}
 					className={classes.sliderDiv}
 				>

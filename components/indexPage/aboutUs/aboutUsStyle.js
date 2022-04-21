@@ -49,7 +49,7 @@ const useStyles = makeStyles({
 		color: 'rgba(99, 99, 99, 0.75)',
 		overflow: 'hidden',
 		transition: 'height 0.5s',
-		//width: '551px',
+		width: '551px',
 	},
 
 	button: {
@@ -134,6 +134,10 @@ const useStyles = makeStyles({
 	//1230px
 	['@media (max-width: 1230px)']: {
 		leftSection: {
+			display: 'none',
+		},
+
+		moreButton: {
 			display: 'none',
 		},
 

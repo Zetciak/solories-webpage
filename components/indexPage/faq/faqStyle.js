@@ -61,6 +61,64 @@ const useStyles = makeStyles({
 	accordionMargin: {
 		marginTop: '71px',
 	},
+
+	//1250px
+	['@media (max-width: 1250px)']: {
+		titleDiv: {
+			margin: '0 auto',
+		},
+
+		insideDiv: {
+			width: '90%',
+			margin: '0 auto',
+		},
+	},
+
+	//784px
+	['@media (max-width: 784px)']: {
+		titleDiv: {
+			width: '90%',
+			height: 'auto',
+		},
+	},
+
+	//660px
+	['@media (max-width: 660px)']: {
+		title: {
+			fontSize: '20px',
+		},
+
+		desc: {
+			fontSize: '13px',
+		},
+
+		expandArrow: {
+			width: '35px',
+			height: '35px',
+		},
+	},
+
+	//470px
+	['@media (max-width: 470px)']: {
+		accordionMargin: {
+			marginTop: '41px',
+		},
+	},
+
+	//350px
+	['@media (max-width: 350px)']: {
+		title: {
+			fontSize: '15px',
+		},
+
+		desc: {
+			fontSize: '12px',
+		},
+
+		accordionMargin: {
+			marginTop: '21px',
+		},
+	},
 });
 
 export default useStyles;

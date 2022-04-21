@@ -98,8 +98,6 @@ const useStyles = makeStyles({
 	//1020px
 	['@media (max-width: 1020px)']: {
 		titleDiv: {
-			width: '90%',
-			height: 'auto',
 			margin: '0 auto',
 		},
 
@@ -107,6 +105,15 @@ const useStyles = makeStyles({
 			marginTop: '21px',
 			width: '100%',
 			textAlign: 'center',
+		},
+	},
+
+	//650px
+	['@media (max-width: 650px)']: {
+		titleDiv: {
+			width: '90%',
+			height: 'auto',
+			margin: '0 auto',
 		},
 	},
 });

@@ -70,6 +70,32 @@ const useStyles = makeStyles({
 			width: '77%',
 		},
 	},
+
+	//740px
+	['@media (max-width: 740px)']: {
+		leftTitle: {
+			clear: 'both',
+			fontSize: '14px',
+			width: '100%',
+			textAlign: 'center',
+			marginTop: '-10px',
+		},
+
+		rightElements: {
+			clear: 'both',
+			width: '110%',
+			margin: '0 auto',
+			textAlign: 'center',
+			marginTop: '10px',
+		},
+	},
+
+	//450px
+	['@media (max-width: 450px)']: {
+		rightElements: {
+			width: '115%',
+		},
+	},
 });
 
 export default useStyles;

@@ -93,6 +93,72 @@ const useStyles = makeStyles({
 	roadmapElementsOne: {
 		clear: 'both',
 	},
+
+	//<<<<<<<<<<<<<<<<<<<< Responsive scale
+	//1439px
+	['@media (max-width: 1439px)']: {
+		insideDiv: {
+			width: '90%',
+			margin: '0 auto',
+		},
+	},
+
+	//1020px
+	['@media (max-width: 1020px)']: {
+		titleDiv: {
+			margin: '0 auto',
+		},
+
+		mainDesc: {
+			marginTop: '21px',
+			width: '100%',
+			textAlign: 'center',
+		},
+	},
+
+	//1000px
+	['@media (max-width: 1000px)']: {
+		lineDiv: {
+			marginTop: '14px',
+		},
+	},
+
+	//335px
+	['@media (max-width: 335px)']: {
+		titleDiv: {
+			width: '90%',
+			height: 'auto',
+			margin: '0 auto',
+		},
+	},
+
+	//427px
+	['@media (max-width: 427px)']: {
+		lineDiv: {
+			marginTop: '16px',
+		},
+
+		roadmapElementsText: {
+			fontSize: '13px',
+			width: '89%',
+		},
+	},
+
+	//355px
+	['@media (max-width: 355px)']: {
+		lineDiv: {
+			marginTop: '16px',
+		},
+
+		roadmapElementsText: {
+			fontSize: '13px',
+			width: '87%',
+		},
+
+		lineDiv: {
+			width: '70%',
+		},
+	},
 });
 
 export default useStyles;

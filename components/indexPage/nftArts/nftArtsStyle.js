@@ -42,18 +42,7 @@ const useStyles = makeStyles({
 	//550px
 	['@media (max-width: 550px)']: {
 		mainDiv: {
-			height: '220px',
 			marginTop: '130px',
-		},
-
-		oneNftDiv: {
-			width: '144px',
-			height: '220px',
-			marginTop: 'auto',
-		},
-
-		ograDiv: {
-			width: '100%',
 		},
 	},
 

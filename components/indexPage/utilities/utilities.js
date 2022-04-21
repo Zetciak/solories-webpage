@@ -38,7 +38,22 @@ function Utilities() {
 				</Typography>
 				<div className={classes.lineDiv}></div>
 				<Swiper
-					slidesPerView={4}
+					breakpoints={{
+						500: {
+							width: 500,
+							slidesPerView: 1,
+						},
+
+						1000: {
+							width: 1000,
+							slidesPerView: 2,
+						},
+
+						1440: {
+							width: 1440,
+							slidesPerView: 5,
+						},
+					}}
 					spaceBetween={0}
 					className={classes.sliderDiv}
 				>

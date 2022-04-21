@@ -229,7 +229,14 @@ function Team() {
 						/>
 					</IconButton>
 					<Swiper
-						slidesPerView={3}
+						breakpoints={{
+							300: {
+								slidesPerView: 1,
+							},
+							1290: {
+								slidesPerView: 3,
+							},
+						}}
 						spaceBetween={0}
 						className={classes.sliderDiv}
 						ref={sliderRef}

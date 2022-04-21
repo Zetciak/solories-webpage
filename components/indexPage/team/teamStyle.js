@@ -193,6 +193,184 @@ const useStyles = makeStyles({
 			opacity: '0.7',
 		},
 	},
+
+	//1290px
+	['@media (max-width: 1290px)']: {
+		titleDiv: {
+			margin: '0 auto',
+		},
+
+		insideOneSlideOutside: {
+			margin: '0 auto',
+		},
+
+		smallImage: {
+			right: '25.5%',
+		},
+
+		insideDivTitle: {
+			width: '100%',
+		},
+
+		sliderDiv: {
+			width: '600px',
+			float: 'left',
+		},
+
+		insideDiv: {
+			width: '800px',
+			margin: '0 auto',
+		},
+	},
+
+	//1020px
+	['@media (max-width: 1020px)']: {
+		insideDiv: {
+			width: '80%',
+			margin: '0 auto',
+		},
+	},
+
+	//950px
+	['@media (max-width: 950px)']: {
+		sliderDiv: {
+			width: '400px',
+			float: 'left',
+			margin: '0 auto',
+		},
+
+		insideDiv: {
+			width: '550px',
+			margin: '0 auto',
+		},
+
+		smallImage: {
+			right: '13%',
+		},
+	},
+
+	//580px
+	['@media (max-width: 580px)']: {
+		arrowLeft: {
+			marginRight: '0px',
+		},
+
+		arrowRight: {
+			marginLeft: '0px',
+		},
+
+		insideDiv: {
+			width: '480px',
+			margin: '0 auto',
+		},
+
+		insideOneSlideOutside: {
+			width: '264px',
+		},
+
+		insideOneSlide: {
+			width: '240px',
+			height: '303px',
+		},
+
+		bigImage: {
+			width: '84%',
+			height: '84%',
+		},
+
+		firstLine: {
+			marginTop: '-40px',
+		},
+
+		nameTypo: {
+			fontSize: '11px',
+			marginLeft: '18px',
+		},
+
+		roleTypo: {
+			marginTop: '8px',
+			fontSize: '10px',
+			marginLeft: '18px',
+		},
+
+		smallImage: {
+			width: '52px',
+			height: '52px',
+			right: '21%',
+		},
+	},
+
+	//495px
+	['@media (max-width: 495px)']: {
+		insideDiv: {
+			width: '395px',
+			margin: '0 auto',
+		},
+
+		arrowLeft: {
+			display: 'none',
+		},
+
+		arrowRight: {
+			display: 'none',
+		},
+
+		sliderDiv: {
+			width: '97%',
+			margin: '0 auto',
+		},
+
+		smallImage: {
+			width: '52px',
+			height: '52px',
+			right: '19%',
+		},
+	},
+
+	//481px
+	['@media (max-width: 481px)']: {
+		titleDiv: {
+			width: '90%',
+			height: 'auto',
+			margin: '0 auto',
+		},
+	},
+
+	//375px
+	['@media (max-width: 375px)']: {
+		insideDiv: {
+			width: '110%',
+			margin: '0 auto',
+		},
+
+		sliderDiv: {
+			width: '90%',
+			margin: '0 auto',
+		},
+
+		insideOneSlideOutside: {
+			width: '90%',
+		},
+
+		insideOneSlide: {
+			width: '80%',
+			height: '340px',
+		},
+
+		smallImage: {
+			width: '15%',
+			height: '15%',
+			right: '15%',
+		},
+	},
+
+	//350px
+	['@media (max-width: 350px)']: {
+		insideOneSlide: {
+			width: '80%',
+			height: '300px',
+		},
+	},
 });
 
 export default useStyles;
