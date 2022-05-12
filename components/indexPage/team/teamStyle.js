@@ -120,6 +120,7 @@ const useStyles = makeStyles({
 		position: 'absolute',
 		top: '3px',
 		right: '33px',
+		background: '#ffffffaa',
 	},
 
 	firstLine: {

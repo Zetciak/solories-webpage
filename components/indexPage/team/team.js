@@ -34,48 +34,47 @@ const teamMembersList = new Array();
 teamMembersList[1] = {
 	image1: dawid1,
 	image2: dawid2,
-	name: 'Dawid Ganowski',
+	name: 'Helsinki',
 	role: 'Founder',
-	linkedin: 'https://pl.linkedin.com/in/dawid-ganowski-506b06205',
-	twitter: 'https://twitter.com/DGanowski',
+	linkedin: 'https://google.com',
+	twitter: 'https://google.com',
 	instagram: false,
 };
 teamMembersList[2] = {
 	image1: kacper1,
 	image2: kacper2,
-	name: 'Kacper Suszek',
+	name: 'Craig Stole Luna',
 	role: 'Founder',
-	linkedin:
-		'https://pl.linkedin.com/in/kacper-suszek-a08971233?trk=people_directory',
-	twitter: 'https://twitter.com/MrSuszek',
+	linkedin: 'https://google.com',
+	twitter: 'https://google.com',
 	instagram: false,
 };
 teamMembersList[3] = {
 	image1: zetty1,
 	image2: zetty2,
-	name: 'Marcel Mikosza',
+	name: 'Zetty',
 	role: 'Developer',
 	linkedin: false,
-	twitter: 'https://twitter.com/Zetciak',
+	twitter: 'https://google.com',
 	instagram: false,
 };
 teamMembersList[4] = {
 	image1: maciek1,
 	image2: maciek2,
-	name: 'Maciek Stradowski',
+	name: 'skyliNe',
 	role: 'Graphic Designer',
 	linkedin: false,
-	twitter: 'https://twitter.com/47maciek47',
+	twitter: 'https://google.com',
 	instagram: false,
 };
 teamMembersList[5] = {
 	image1: julian1,
 	image2: julian2,
-	name: 'Julian Mills',
+	name: 'Juju',
 	role: 'Community Manager',
 	linkedin: false,
-	twitter: 'https://twitter.com/47maciek47',
-	instagram: 'https://twitter.com/47maciek47',
+	twitter: 'https://google.com',
+	instagram: 'https://google.com',
 };
 let teamMembers = [];
 
@@ -237,6 +236,7 @@ function Team() {
 								slidesPerView: 3,
 							},
 						}}
+						slidesPerView={3}
 						spaceBetween={0}
 						className={classes.sliderDiv}
 						ref={sliderRef}
